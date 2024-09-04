@@ -11,11 +11,13 @@ public class Main {
         int numberClone = number;
         int reverse = 0;
 
-    while (number > 0)
-    lastDigit = number % 10;
-    reverse *= 10;
-    reverse += lastDigit;
-    number /= 10;
+    while (number > 0){
+       int lastDigit = number % 10;
+        reverse *= 10;
+        reverse += lastDigit;
+        number /= 10;
+    }
+
 
         return reverse == numberClone;
     }
